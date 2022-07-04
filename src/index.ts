@@ -1,8 +1,8 @@
 
-import { CsvFileReader } from "./CsvFileReader";
 import { MatchResult } from "./MatchResult";
+import { MatchReader } from "./MatchReader";
 
-const reader = new CsvFileReader('football.csv')
+const reader = new MatchReader('football.csv')
 reader.read()
 
 const teamName = 'Man United'
@@ -15,6 +15,6 @@ for (let match of reader.data) {
     }
 }
 
-// console.log(`"${teamName}" won ${teamWins} games`)
-const date = new Date('27-10-2018')
-console.log(date)
+console.log(`"${teamName}" won ${teamWins} games`)
+
+
